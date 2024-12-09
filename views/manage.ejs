@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Role - EcoRide</title>
+    <%- include('favicon.ejs') %>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <%- include('header.ejs') %>
+        </header>
+        <div class="card">
+            <h1>Welcome <%= username %>! Manage Your Role</h1>
+            <div class="button-container">
+                <a href="/<%= username %>/addRole?role=buyer" class="btn">Buyer</a>
+                <a href="/<%= username %>/addRole?role=seller" class="btn">Seller</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
